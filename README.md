@@ -34,14 +34,15 @@ The work investigates how variational autoencoders (VAEs) can be used to extract
 ## 📁 Repository Structure
 
 ```plaintext
-├── Notebook/                 # Jupyter notebooks for preprocessing, training and analysis
-├── Compressed Data/          # Latent compressed representations from compress_data.py
-├── Uncompressed Data/        # Folder to place the raw data from Zenodo
-├── Def Models/               # Trained neural network weights and configurations
-├── compress_data.py          # Script to compress unprocessed time series
-├── correlation_analysis.py   # Script to evaluate the best lag for each trial
-├── Def_list.json             # List of all networks settings
-└── README.md                 # Project documentation
+├── Notebooks/                     # Jupyter notebooks for preprocessing, training and analysis
+├── Compressed Data/              # Latent compressed representations from compress_data.py
+├── Uncompressed Data/            # Folder to place the raw data from Zenodo
+├── Def Models/                   # Trained neural network weights and configurations
+├── compress_data.py              # Script to compress unprocessed time series
+├── correlation_analysis.py       # Script to evaluate the best lag for each trial
+├── Def_list.json                 # List of all networks settings
+├── pupil_diameter_74_trials.npy  # Pupillometry measurements for all trials
+└── README.md                     # Project documentation
 
 ```
 
