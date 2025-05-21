@@ -34,12 +34,14 @@ The work investigates how variational autoencoders (VAEs) can be used to extract
 ## 📁 Repository Structure
 
 ```plaintext
-├── Notebook/              # Jupyter notebooks for preprocessing, training and analysis
-├── Compressed Data/       # Latent compressed representations from compress_data.py
-├── Uncompressed Data/     # Folder to place the raw data from Zenodo
-├── Def Models/            # Trained neural network weights and configurations
-├── compress_data.py       # Script to compress unprocessed time series
-└── README.md              # Project documentation
+├── Notebook/                 # Jupyter notebooks for preprocessing, training and analysis
+├── Compressed Data/          # Latent compressed representations from compress_data.py
+├── Uncompressed Data/        # Folder to place the raw data from Zenodo
+├── Def Models/               # Trained neural network weights and configurations
+├── compress_data.py          # Script to compress unprocessed time series
+├── correlation_analysis.py   # Script to evaluate the best lag for each trial
+├── Def_list.json             # List of all networks settings
+└── README.md                 # Project documentation
 
 ```
 
@@ -47,7 +49,7 @@ To use the project, first download the original dataset from:
 [https://zenodo.org/records/4670277](https://zenodo.org/records/4670277)  
 and place the files inside the `Uncompressed Data/` folder.
 
-## Usage Instructions
+## 📖 Usage Instructions
 
 ### 1. Preprocess and Compress Data
 - Run `compress_data.py` to:
@@ -65,7 +67,7 @@ and place the files inside the `Uncompressed Data/` folder.
   - Evaluate reconstruction performance.
   - Plot PCA variance, latent trajectories, and time-series reconstructions.
 
-## Dependencies
+## 🧩 Dependencies
 
 - Python 3.8+
 - NumPy
@@ -82,7 +84,7 @@ pip install numpy scipy matplotlib scikit-learn nibabel torch
 
 ```
 
-## Citation
+## 🔖 Citation
 
 If you use this code or ideas from this project, please cite the original thesis:
 
@@ -95,9 +97,9 @@ If you use this code or ideas from this project, please cite the original thesis
   url = {https://thesis.unipd.it/handle/20.500.12608/84641}
 }
 ```
-## License
+## 📝 License
 This repository is released under the MIT License.
 
-### Contact
+### 📜 Contact
 For questions or feedback, feel free to open an issue on GitHub or contact the repository maintainer.
 
